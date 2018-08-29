@@ -1,0 +1,17 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    background-color: rgb(175, 177, 175);
+}
+li a {
+  text-align: center;
+  display: block;
+}
+
+li a:hover {
+    background-color: rgb(33, 35, 235);
+    color: rgb(240, 246, 236);
+
+}
