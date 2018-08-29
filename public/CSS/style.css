@@ -1,3 +1,43 @@
-h2 {
-  color: rgb(67, 223, 92)
+body {
+  background-color: rgb(121, 122, 133);
+  color: rgb(118, 57, 139);
+
 }
+h2 {
+    color: rgb(65, 45, 147);
+}
+h4 {
+    color: rgb(65, 45, 147);
+}
+a {
+  color:  rgb(9, 79, 45);
+}
+
+ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        width: 100px;
+        background-color: rgb(175, 177, 175);
+    }
+    li a {
+      text-align: center;
+      display: block;
+    }
+
+    li a:hover {
+        background-color: rgb(33, 35, 235);
+        color: rgb(240, 246, 236);
+
+    }
+    #maininfo {
+      color: rgb(203, 38, 84);
+        padding-left: 10;
+    }
+
+    .button {
+      color: rgb(118, 57, 139);
+    }
+    #submit {
+      color: rgb(118, 57, 139);
+    }
