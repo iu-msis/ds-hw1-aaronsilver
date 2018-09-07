@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 <head>
@@ -25,98 +24,107 @@
 <table id="fishTable" class="table">
   <thead>
     <tr>
-      <th scope="col">Fish Type</th>
-      <th scope="col">Area Caught</th>
-      <th scope="col">Price/lb.</th>
-      <th scope="col">Average Weight (lbs.)</th>
-      <th scope="col">Image</th>
+      <th >Fish Type</th>
+      <th >Area Caught</th>
+      <th >Price/lb.</th>
+      <th >Average Weight (lbs.)</th>
+      <th >Color</th>
+
     </tr>
   </thead>
-  <tbody id="maininfo">
-    <tr>
-      <th scope="row">Tuna</th>
+  <tbody>
+    <tr id="maininfo">
+      <th>Tuna</th>
       <td>North Atlantic</td>
       <td>$45</td>
       <td>100</td>
-      <td><a href="https://cdn.britannica.com/s:700x450/01/127301-004-D36070E3.jpg"> <img src="https://cdn.britannica.com/s:700x450/01/127301-004-D36070E3.jpg" alt="Source: Encyclopedia Britannica" height="50" width="70"> </a></td>
+      <td>Blue</td>
 
     </tr>
-    <tr>
-      <th scope="row">Salmon</th>
-      <td>Alask</td>
+    <tr id="maininfo">
+      <th>Salmon</th>
+      <td>Alaska</td>
       <td>$35</td>
       <td>150</td>
-      <td><a href="https://upload.wikimedia.org/wikipedia/commons/9/91/Oncorhynchus_keta.jpeg"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Oncorhynchus_keta.jpeg" alt="Source: Wikipedia" height="50" width="70"> </a></td>
+      <td>Green</td>
+
 
     </tr>
-    <tr>
-      <th scope="row">Tilapia</th>
+    <tr id="maininfo">
+      <th>Tilapia</th>
       <td>Scandanavia</td>
       <td>$25</td>
       <td>120</td>
-      <td><a href="https://upload.wikimedia.org/wikipedia/commons/8/85/Sagalgm0.png"> <img src="https://upload.wikimedia.org/wikipedia/commons/8/85/Sagalgm0.png" alt="Source: Wikipedia" height="50" width="70"> </a></td>
+      <td>Pink</td>
+
 
 
 
     </tr>
-    <tr>
-      <th scope="row">Catfish</th>
+    <tr id="maininfo">
+      <th>Catfish</th>
       <td>Gulf of Mexico</td>
       <td>$20</td>
       <td>90</td>
-      <td><a href="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ameiurus_melas_by_Duane_Raver.png/1200px-Ameiurus_melas_by_Duane_Raver.png"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/94/Ameiurus_melas_by_Duane_Raver.png/1200px-Ameiurus_melas_by_Duane_Raver.png" alt="Source: Wikipedia" height="50" width="70"> </a></td>
+      <td>Yellow</td>
+
 
 
 
     </tr>
-    <tr>
-      <th scope="row">Cod</th>
+    <tr id="maininfo">
+      <th>Cod</th>
       <td>Pacific</td>
       <td>$25</td>
       <td>110</td>
-      <td><a href="https://upload.wikimedia.org/wikipedia/commons/9/96/Gadus_macrocephalus.png"> <img src="https://upload.wikimedia.org/wikipedia/commons/9/96/Gadus_macrocephalus.png" alt="Source: Wikipedia" height="50" width="70"> </a></td>
+      <td>Purple</td>
+
 
     </tr>
   </tbody>
-
   <tfoot class=table-borderless>
-  <form>
-  <div class="input-group">
+ <form>
+ <div class="input-group">
 
-  <tr>
-  <td> Fish Type:<input type="text" name="fish type" class="form-control"/></td>
-  </tr>
+ <tr>
+ <td> Fish Type:<input type="text" name="fish type" class="form-control"/></td>
+ </tr>
 
-  <tr>
-    <td> Area Caught:<input type="text" name="area caught" class="form-control"/></td>
-  </tr>
+ <tr>
+   <td> Area Caught:<input type="text" name="area caught" class="form-control"/></td>
+ </tr>
 
-  <tr>
-  <td> Price/lb. :<input type="number" name="price per pound" class="form-control"/></td>
-  </tr>
+ <tr>
+ <td> Price/lb. :<input type="number" name="price per pound" class="form-control"/></td>
+ </tr>
 
-  <tr>
-  <td> Average Weight (lbs.):<input type="number" name="average weight in pounds" class="form-control"/></td>
-  </tr>
+ <tr>
+ <td> Average Weight (lbs.):<input type="number" name="average weight in pounds" class="form-control"/></td>
+ </tr>
 
-  <tr>
-  <td> Image<input type="image" name="image" class="form-control" id="submit" /></td>
-  </tr>
+ <tr>
+ <td> Color: <input type="text" name="color" class="form-control"/></td>
+ </tr>
 
-  </div>
-
-
+ </div>
 
 
-        <tr>
-            <td>
-                <input type="button" value="Add Row" class="button" />
-            </td>
-        </tr>
 
-      </form>
 
-    </tfoot>
-</table>
+       <tr>
+           <td>
+               <input type="button" value="Add Row" class="button" />
+           </td>
+       </tr>
+
+     </form>
+
+   </tfoot>
+</table id="maininfo">
+<script src="js/tablesort.js"> </script>
+<script>
+/** source: http://tristen.ca/tablesort/demo/ **/
+  new Tablesort(document.getElementById('fishTable'));
+</script>
 </body>
 </html>
