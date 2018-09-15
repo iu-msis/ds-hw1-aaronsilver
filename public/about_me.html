@@ -31,18 +31,18 @@
 <h4> Name </h4>
 <p id="maininfo"> {{tasks.results[0].name.first}} {{tasks.results[0].name.last}} </p>
 <h4>Address </h4>
-<p id="maininfo"> Canada </p>
+<p id="maininfo"> {{tasks.results[0].location.street}} {{tasks.results[0].location.city}}, {{tasks.results[0].location.state}} {{tasks.results[0].location.postcode}}</p>
 <h4>Birthdate </h4>
 <p id="maininfo"> {{this.tasks.results[0].dob.date}} </p>
 <h4>Age</h4>
 <p id="maininfo"> {{age}} </p>
 <h4>E-mail </h4>
-<p id="maininfo"> <a id="email" href="mailto:jack.martin49@example.com"> jack.martin49@example.com</a></p>
+<p id="maininfo"> <a id="email" :href="`mailto:${tasks.results[0].email}`"> {{tasks.results[0].email}}</a></p>
 <br>
 
 
 
-<button type="button" @click=fetchTasks" > NewProfile </button>
+  <button type="button" @click="fetchTasks" >New Profile</button>
 </div>
   </main>
 <!-- moment js via CDN -->
