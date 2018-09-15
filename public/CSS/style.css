@@ -7,18 +7,20 @@ h2 {
     color: rgb(65, 45, 147);
 }
 h4 {
+    background-color: rgb(5, 122, 133);
     color: rgb(65, 45, 147);
 }
 a {
   color:  rgb(9, 278, 45);
 }
 
+
 ul {
         list-style-type: none;
         margin: 0;
         padding: 0;
         width: 100px;
-        background-color: rgb(175, 177, 175);
+
     }
     li a {
       text-align: center;
@@ -31,8 +33,13 @@ ul {
 
     }
     #maininfo {
+      background-color: rgb(5, 122, 133);
       color: rgb(203, 38, 84);
         padding-left: 10;
+    }
+
+    #navbar {
+        background-color: rgb(175, 177, 175);
     }
 
     .button {
@@ -40,6 +47,9 @@ ul {
     }
     #submit {
       color: rgb(118, 57, 139);
+    }
+    #email {
+      color: rgb(203, 38, 84);
     }
 
 

@@ -16,28 +16,37 @@
 
 <p> {{ message }} </p>
 <h2>About Me</h2>
-<ul>
+<ul id="navbar">
   <li><a href="index.html">Index</a></li>
   <li><a href="about_me.html">About Me</a></li>
   <li><a href="fish_prices.html">Fish Prices</a></li>
 </ul>
-<br />
+<br>
 
-<a href="img/jackmartin.html"> <img src="https://randomuser.me/api/portraits/men/15.jpg" alt="Soure: Random User Website"> </a>
+
+<div>
+<p> <img v-bind:src="tasks.results[0].picture.large" /> </p>
+
 
 <h4> Name </h4>
-<p id="maininfo"> Jack Martin </p>
-<h4>Country of Origin </h4>
+<p id="maininfo"> {{tasks.results[0].name.first}} {{tasks.results[0].name.last}} </p>
+<h4>Address </h4>
 <p id="maininfo"> Canada </p>
 <h4>Birthdate </h4>
-<p id="maininfo"> 4/7/1979 </p>
+<p id="maininfo"> {{this.tasks.results[0].dob.date}} </p>
 <h4>Age</h4>
-<p id="maininfo"> 39 </p>
-<h4>E-mail Address </h4>
-<p id="maininfo"> <a href="mailto:jack.martin49@example.com"> jack.martin49@example.com</a></p>
+<p id="maininfo"> {{age}} </p>
+<h4>E-mail </h4>
+<p id="maininfo"> <a id="email" href="mailto:jack.martin49@example.com"> jack.martin49@example.com</a></p>
+<br>
 
+
+
+<button type="button" @click=fetchTasks" > NewProfile </button>
+</div>
   </main>
-
+<!-- moment js via CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
 <!-- development version, includes helpful console warnings -->
 <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 <script src="js/profile.app.js"></script>
