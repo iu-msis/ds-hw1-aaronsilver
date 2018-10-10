@@ -13,7 +13,7 @@ class Comment
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT * FROM Teams';
+    $sql = 'SELECT * FROM Comments';
     $statement = $db->prepare($sql);
     // 3. Run the query
     $success = $statement->execute();
