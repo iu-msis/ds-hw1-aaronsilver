@@ -11,4 +11,4 @@ require 'environment.php';
 
 /** MODELS **/
 
-require 'app/models/Comment.php';
+require 'Models/Comment.php';
