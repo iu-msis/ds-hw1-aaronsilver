@@ -24,7 +24,7 @@ class Comment
     }
     return $arr;
   }
-}
+
 
 public function create() {
   $db = new PDO(DB_SERVER, DB_USER, DB_PW);
@@ -36,4 +36,5 @@ public function create() {
     $this->comment
   ]);
   $this->id = $db->lastInsertId();
+}
 }
