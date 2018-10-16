@@ -26,7 +26,7 @@ class Comments
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT * FROM Comments;
+    $sql = 'SELECT * FROM Comments';
 
     $statement = $db->prepare($sql);
 
