@@ -59,13 +59,13 @@
 
                 <form @submit.prevent="handleWorkForm">
                   <div class="form-group row">
-                    <label for="start" class="col-sm-1 col-form-label">Start: </label>
+                    <label for="Comment" class="col-sm-1 col-form-label">New Comment: </label>
                     <div class="col-sm-3">
-                      <input type="date" id="start" v-model="workForm.start" class="form-control" required>
+                      <input type="text" id="comment" v-model="commentArray.comment" class="form-control" required>
                     </div>
                   </div>
 
-                  <button type="submit" class="btn btn-primary">Save changes</button>
+                  <button type="submit" class="btn btn-primary">Send Comment</button>
                 </form>
               <!-- </div>
             </div>
