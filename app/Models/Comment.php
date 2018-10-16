@@ -5,7 +5,7 @@ class Comments
   public $comment;
 
   public function __construct($row) {
-    $this->id = intval($row['id']);
+    $this->id = isset($row['id']) ? intval($row['id']) : null;
     $this->comment = $row['comment'];
 
   }
@@ -25,8 +25,10 @@ class Comments
     // 1. Connect to the database
     $db = new PDO(DB_SERVER, DB_USER, DB_PW);
     // 2. Prepare the query
-    $sql = 'SELECT * FROM Comments WHERE id = ?';
+    $sql = 'SELECT * FROM Comments;
+
     $statement = $db->prepare($sql);
+
     // 3. Run the query
     $success = $statement->execute(
         [$id]
