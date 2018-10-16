@@ -5,7 +5,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
   require 'commentPost.php';
   exit;
 }
-
+$id = intval($_GET['id'] ?? 0);
 
 
 $comment = Comments::findAll();
