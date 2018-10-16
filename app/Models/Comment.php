@@ -5,14 +5,11 @@ class Comments
   public $comment;
 
   public function __construct($row) {
-<<<<<<< HEAD
     $this->id = isset($row['id']) ? intval($row['id']) : null;
     $this->comment = $row['comment'];
-=======
-    
->>>>>>> 98bde604ce225175178cfb65ee5d0fecee20b625
 
   }
+
   public function create(){
     $db=new PDO(DB_SERVER, DB_USER, DB_PW);
     $sql='INSERT INTO Comments(id,comment)
