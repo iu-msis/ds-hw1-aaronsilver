@@ -28,7 +28,7 @@
         <tbody v-for="c in commentArray" id="commentTableBody"
         :key="c.id"
         :id="'newCommentForm-' + newCommentForm.id + '-commentArray-' + c.id">
-          <td>{{c.id)}}</td>
+          <td>{{c.id}}</td>
           <td>{{c.comment}}</td>
 
         </tbody>
@@ -65,7 +65,7 @@
                     </div>
                   </div>
 
-                  <button type="submit" class="btn btn-primary"> Submit Comment</button>
+                  <button type="submit" id="submitNewComment" class="btn btn-primary"> Submit Comment</button>
                 </form>
               <!-- </div>
             </div>
