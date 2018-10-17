@@ -58,10 +58,10 @@
               <hr>
                 <h4>Add comment</h4>
 
-                <form @submit.prevent="newCommentForm">
+                <form @submit.prevent="handleNewCommentForm">
                   <div class="form-group row">
                       <div class="col-sm-3">
-                    <label for="Comment" class="col-sm-1 col-form-label">New Comment: </label>
+                    <label for="Comment" class="col-sm-1 col-form-label"></label>
 
 
                       <input type="text" id="comment" v-model="commentArray.comment" class="form-control" required>
