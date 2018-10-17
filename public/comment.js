@@ -46,7 +46,7 @@ var commentApp = new Vue({
     // Do data fetch
     const url = new URL(window.location.href);
     const id = url.searchParams.get('id');
-    console.log('id: '+ id);
+    console.log('ID: '+ id);
     this.id = id;
 
     if (!id) {
