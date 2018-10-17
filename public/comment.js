@@ -37,6 +37,7 @@ var commentApp = new Vue({
 
     getEmptyCommentForm() {
       return {
+
         comment: this.commentArray.comment
     }
   },
@@ -65,7 +66,7 @@ var commentApp = new Vue({
     .then( response => response.json() )
     .then( json => {commentApp.commentArray = json} )
     .catch( err => {
-      console.log('Comment Array ERROR:');
+      console.log('Comment Fetch ERROR:');
       console.log(err);
     })
   }
