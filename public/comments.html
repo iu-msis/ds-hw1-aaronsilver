@@ -26,11 +26,11 @@
 
           </tr>
         </thead>
-        <tbody v-for="c in commentArray" id="commentTableBody"
-        :key="c.id"
+        <tbody v-for="w in commentArray" id="commentTableBody"
+        :key="w.id"
         :id="'newCommentForm-' + newCommentForm.id + '-commentArray-' + c.id">
-          <td>{{c.id}}</td>
-          <td>{{c.comment}}</td>
+          <td>{{c=w.id}}</td>
+          <td>{{w.comment}}</td>
 
         </tbody>
       </table>
@@ -63,7 +63,7 @@
                     <label for="Comment" class="col-sm-1 col-form-label">New Comment: </label>
 
                       <input type="text" id="comment" v-model="commentArray.comment" class="form-control" required>
-          
+
                   </div>
 
                   <button type="submit" id="submitNewComment" class="btn btn-primary"> Submit Comment</button>
