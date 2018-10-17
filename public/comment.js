@@ -41,6 +41,7 @@ var commentApp = new Vue({
         comment: this.commentArray.comment
     }
   },
+  },
   created () {
 
     // Do data fetch
@@ -71,5 +72,5 @@ var commentApp = new Vue({
     })
   }
 
-}
+
 })
