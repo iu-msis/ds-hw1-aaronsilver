@@ -26,10 +26,6 @@ var commentApp = new Vue({
       })
       .then( response => response.json() )
       .then( json => {this.commentArray.push(json)})
-      .catch( err => {
-        console.error('COMMENT POST ERROR:');
-        console.error(err);
-      })
 
       // Reset workForm
       this.newCommentForm = this.getEmptyCommentForm();
