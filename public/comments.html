@@ -56,14 +56,16 @@
               </div>
               <div class="modal-footer"> -->
               <hr>
-                <h3>Add comment</h3>
+                <h4>Add comment</h4>
 
                 <form @submit.prevent="newCommentForm">
                   <div class="form-group row">
+                      <div class="col-sm-3">
                     <label for="Comment" class="col-sm-1 col-form-label">New Comment: </label>
 
-                      <input type="text" id="comment" v-model="commentArray.comment" class="form-control" required>
 
+                      <input type="text" id="comment" v-model="commentArray.comment" class="form-control" required>
+                      </div>
                   </div>
 
                   <button type="submit" id="submitNewComment" class="btn btn-primary"> Submit Comment</button>
