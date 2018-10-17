@@ -38,7 +38,7 @@ var commentApp = new Vue({
     getEmptyCommentForm() {
       return {
 
-        comment: this.commentArray.comment
+        comment: ' '
     }
   },
   created () {
